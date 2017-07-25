@@ -12,14 +12,14 @@ func main() {
 	fmt.Printf("%d / %d = %d\n", divA, divB, divideInt(divA, divB))
 }
 
-func subtractInt(a int, b int) int {
+func subtractInt(a, b int) int {
 	return a - b
 }
 
-func multiplyInt(a int, b int) int {
+func multiplyInt(a, b int) int {
 	return a * b
 }
 
-func divideInt(a int, b int) int {
+func divideInt(a, b int) int {
 	return a / b
 }
