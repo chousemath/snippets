@@ -35,6 +35,8 @@ func main() {
 	fmt.Println("The area of a circle with radius", radiusA, "is", areaOfCircle(radiusA))
 	fmt.Printf("Circle with radius %.2f is %.2f\n", radiusA, areaOfCircle(radiusA))
 	fmt.Printf("It also has a circumference of %.2f\n", circOfCircle(radiusA))
+
+	fmt.Println("The sum of 1 and 2 is", addInt(1, 2))
 }
 
 func areaOfCircle(r float64) float64 {
@@ -43,4 +45,8 @@ func areaOfCircle(r float64) float64 {
 
 func circOfCircle(r float64) float64 {
 	return 2 * math.Pi * r
+}
+
+func addInt(a int, b int) int {
+	return a + b
 }
