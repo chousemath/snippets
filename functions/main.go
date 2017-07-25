@@ -13,6 +13,7 @@ func main() {
 	fmt.Printf("%d * %d = %d\n", multiplyA, multiplyB, multiplyInt(multiplyA, multiplyB))
 	fmt.Printf("%d / %d = %d\n", divA, divB, divideInt(divA, divB))
 	fmt.Printf("%d `mod` %d is %d\n", modA, modB, moduloInt(modA, modB))
+	fmt.Println("1 + 2 + 3 =", tripleSum(1, 2, 3))
 }
 
 func subtractInt(a, b int) int {
@@ -29,4 +30,8 @@ func divideInt(a, b int) int {
 
 func moduloInt(a, b int) int {
 	return a % b
+}
+
+func tripleSum(a, b, c int) int {
+	return a + b + c
 }
