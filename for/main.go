@@ -49,6 +49,12 @@ func main() {
 	} else {
 		fmt.Println(msgA)
 	}
+
+	if aa := sumInt(5, 5); aa > 10 {
+		fmt.Println(aa, "is greater than 10")
+	} else {
+		fmt.Println(aa, "is not greater than ten")
+	}
 }
 
 func sqrtCheck(x float64) (float64, string) {
@@ -56,4 +62,8 @@ func sqrtCheck(x float64) (float64, string) {
 		return -1, "Input should not be negative"
 	}
 	return math.Sqrt(x), "Valid input"
+}
+
+func sumInt(x, y int) int {
+	return x + y
 }
